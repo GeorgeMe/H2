@@ -10,7 +10,7 @@ import org.springframework.context.annotation.Configuration;
  * @date 2017/10/29
  */
 @Configuration
-@MapperScan("com.github.pig.admin.mapper")
+@MapperScan("com.h2.admin.mapper")
 public class MybatisPlusConfig {
     @Bean
     public PaginationInterceptor paginationInterceptor() {
