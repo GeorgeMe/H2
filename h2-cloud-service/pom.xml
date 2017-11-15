@@ -27,9 +27,9 @@
 
     <dependencies>
         <dependency>
-            <groupId>com.github.pig</groupId>
-            <artifactId>pig-common</artifactId>
-            <version>${pig.version}</version>
+            <groupId>com.h2</groupId>
+            <artifactId>h2-cloud-common</artifactId>
+            <version>1.0.0</version>
         </dependency>
         <!--oauth2.0-->
         <dependency>

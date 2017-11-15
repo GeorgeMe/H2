@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.github.pig.admin.mapper.SysUserMapper">
+<mapper namespace="com.h2.admin.mapper.SysUserMapper">
     <!-- 通用查询映射结果 -->
-    <resultMap id="BaseResultMap" type="com.github.pig.admin.entity.SysUser">
+    <resultMap id="BaseResultMap" type="com.h2.admin.entity.SysUser">
         <id column="user_id" property="userId"/>
         <result column="username" property="username"/>
         <result column="password" property="password"/>
@@ -15,7 +15,7 @@
     </resultMap>
 
     <!-- userVo结果集 -->
-    <resultMap id="userVoResultMap" type="com.github.pig.common.vo.UserVo">
+    <resultMap id="userVoResultMap" type="com.h2.common.vo.UserVo">
         <id column="user_id" property="userId"/>
         <result column="username" property="username"/>
         <result column="password" property="password"/>
@@ -25,7 +25,7 @@
         <result column="ucreate_time" property="createTime"/>
         <result column="uupdate_time" property="updateTime"/>
         <result column="udel_flag" property="delFlag"/>
-        <collection property="roleList" ofType="com.github.pig.common.vo.SysRole">
+        <collection property="roleList" ofType="com.h2.common.vo.SysRole">
             <id column="role_id" property="roleId" />
             <result column="role_name" property="roleName" />
             <result column="role_code" property="roleCode" />
